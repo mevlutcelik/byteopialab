@@ -51,15 +51,16 @@ export default function HomePage() {
           <div className="space-y-8">
             <div>
               <p className="text-muted-foreground text-lg mb-2 font-medium">Hoş Geldiniz</p>
+              <span className="bg-orange-700 text-white dark:bg-orange-600 px-3 py-1.5 rounded-md">Yapım Aşamasında!</span>
               <h1 className="heading-xl mb-4">ByteOpia</h1>
-              <h2 className="heading-md text-emerald-700">Teknoloji Laboratuvarı</h2>
+              <h2 className="heading-md text-emerald-700 dark:text-emerald-400">Teknoloji Laboratuvarı</h2>
             </div>
             <p className="body-lg text-muted-foreground max-w-md">
               Teknolojiye tutkulu gençlerin bir araya gelerek fikir ürettiği, geliştirdiği ve hayata geçirdiği yenilikçi
               bir oluşum.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button asChild size="lg" className="text-lg px-8 bg-emerald-700 hover:bg-emerald-800">
+              <Button asChild size="lg" className="text-lg px-8 bg-emerald-700 hover:bg-emerald-800 dark:bg-emerald-600 dark:hover:bg-emerald-700">
                 <Link href="/#contact">İletişime Geç</Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="text-lg px-8">
@@ -68,15 +69,15 @@ export default function HomePage() {
             </div>
           </div>
           <div className="relative">
-            <div className="absolute -top-10 -left-10 w-40 h-40 bg-emerald-100 rounded-full opacity-50"></div>
-            <div className="absolute -bottom-10 -right-10 w-60 h-60 bg-emerald-100 rounded-full opacity-50"></div>
+            <div className="absolute -top-10 -left-10 w-40 h-40 bg-emerald-100 dark:bg-emerald-950 rounded-full opacity-50"></div>
+            <div className="absolute -bottom-10 -right-10 w-60 h-60 bg-emerald-100 dark:bg-emerald-950 rounded-full opacity-50"></div>
             <div className="relative z-10 aspect-square bg-muted rounded-2xl overflow-hidden border border-border">
               <Image
-                src="/placeholder.svg?height=600&width=600"
+                src="/hero.png"
                 alt="ByteOpia"
                 width={600}
                 height={600}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover dark:brightness-90"
               />
             </div>
           </div>
@@ -111,7 +112,7 @@ export default function HomePage() {
             </p>
             <p className="body-lg mb-10">
               Ayrıca düzenli olarak{" "}
-              <Link href="/workshops" className="font-medium underline underline-offset-4 text-emerald-700">
+              <Link href="/workshops" className="font-medium underline underline-offset-4 text-emerald-700 dark:text-emerald-400">
                 atölyeler ve eğitimler
               </Link>{" "}
               düzenleyerek teknoloji alanında kendini geliştirmek isteyen herkese destek oluyoruz.
@@ -121,7 +122,7 @@ export default function HomePage() {
                 asChild
                 variant="outline"
                 size="lg"
-                className="border-emerald-700 text-emerald-700 hover:bg-emerald-700 hover:text-white"
+                className="border-emerald-700 text-emerald-700 hover:bg-emerald-700 dark:border-emerald-600 dark:text-emerald-400 dark:hover:bg-emerald-600 dark:hover:text-white hover:text-white"
               >
                 <Link href="/blog">Blogumuzu Okuyun</Link>
               </Button>
@@ -129,7 +130,7 @@ export default function HomePage() {
                 asChild
                 variant="outline"
                 size="lg"
-                className="border-emerald-700 text-emerald-700 hover:bg-emerald-700 hover:text-white"
+                className="border-emerald-700 text-emerald-700 hover:bg-emerald-700 dark:border-emerald-600 dark:text-emerald-400 dark:hover:bg-emerald-600 dark:hover:text-white hover:text-white"
               >
                 <Link href="/workshops">Atölyelerimiz</Link>
               </Button>
@@ -157,18 +158,20 @@ export default function HomePage() {
               title: "Akıllı Sera Sistemi",
               description:
                 "IoT teknolojileri kullanarak geliştirdiğimiz akıllı sera sistemi, bitkilerin büyümesini optimize ediyor ve su tüketimini azaltıyor.",
+                image: "akilli-sera.jfif",
             },
             {
               id: 2,
-              title: "Yapay Zeka Destekli Eğitim Platformu",
+              title: "MAUN Mobil",
               description:
-                "Öğrencilerin öğrenme stillerine göre içerik öneren ve kişiselleştirilmiş eğitim deneyimi sunan yapay zeka destekli eğitim platformu.",
+                "Muş Alparslan Üniversitesi öğrenci uygulaması (MAUN Mobil), öğrencilerin üniversite yaşamlarını kolaylaştırmak ve akademik bilgilere hızlı erişim sağlamak için tasarlanmıştır.",
+              image: "maun-mobil.jfif",
             },
             {
               id: 3,
-              title: "Siber Güvenlik Eğitim Simülatörü",
+              title: "Dron Üretim Projesi",
               description:
-                "Siber güvenlik alanında kendini geliştirmek isteyenler için gerçek dünya senaryolarını simüle eden interaktif eğitim platformu.",
+                "Dron teknolojileri kullanarak tarımda verimliliği artırmayı hedefleyen bir projedir.",
             },
           ].map((project) => (
             <div key={project.id} className="group">
@@ -185,7 +188,8 @@ export default function HomePage() {
                     asChild
                     variant="outline"
                     size="lg"
-                    className="border-emerald-700 text-emerald-700 group-hover:bg-emerald-700 group-hover:text-white transition-colors"
+                    className="border-emerald-700 text-emerald-700 group-hover:bg-emerald-700 group-hover:text-white transition-colors
+                    dark:border-emerald-600 dark:text-emerald-400 dark:hover:bg-emerald-600 dark:hover:text-white"
                   >
                     <Link href={`/projects/project-${project.id}`}>Projeyi İncele</Link>
                   </Button>
@@ -193,11 +197,11 @@ export default function HomePage() {
                 <div className="overflow-hidden rounded-lg">
                   <div className="aspect-video bg-muted rounded-lg overflow-hidden transition-transform group-hover:scale-105 duration-500">
                     <Image
-                      src={`/placeholder.svg?height=270&width=480`}
+                      src={project?.image || "/placeholder.svg?height=270&width=480"}
                       alt={`Proje ${project.id}`}
                       width={480}
                       height={270}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover border dark:brightness-90"
                     />
                   </div>
                 </div>

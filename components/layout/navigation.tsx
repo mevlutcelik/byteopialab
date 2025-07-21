@@ -24,7 +24,7 @@ export function Navigation() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border">
       <div className="container-custom flex items-center justify-between h-20">
         <Link href="/" className="font-playfair text-2xl font-bold tracking-tight">
-          Byte<span className="text-emerald-700">Opia</span>
+          Byte<span className="text-emerald-700 dark:text-emerald-400">Opia</span>
         </Link>
 
         {/* Desktop Navigation */}
