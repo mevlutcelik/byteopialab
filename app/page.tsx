@@ -168,9 +168,9 @@ export default function HomePage() {
             },
             {
               id: 3,
-              title: "Siber Güvenlik Eğitim Simülatörü",
+              title: "Dron Üretim Projesi",
               description:
-                "Siber güvenlik alanında kendini geliştirmek isteyenler için gerçek dünya senaryolarını simüle eden interaktif eğitim platformu.",
+                "Dron teknolojileri kullanarak tarımda verimliliği artırmayı hedefleyen bir projedir.",
             },
           ].map((project) => (
             <div key={project.id} className="group">
