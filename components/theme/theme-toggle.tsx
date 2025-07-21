@@ -18,9 +18,9 @@ export function ThemeToggle() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => setTheme("light")}>Açık</DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("dark")}>Koyu</DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("system")}>Sistem</DropdownMenuItem>
+        <DropdownMenuItem className="cursor-pointer" onClick={() => setTheme("light")}>Açık</DropdownMenuItem>
+        <DropdownMenuItem className="cursor-pointer" onClick={() => setTheme("dark")}>Koyu</DropdownMenuItem>
+        <DropdownMenuItem className="cursor-pointer" onClick={() => setTheme("system")}>Sistem</DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   )
