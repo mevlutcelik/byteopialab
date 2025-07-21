@@ -157,6 +157,7 @@ export default function HomePage() {
               title: "Akıllı Sera Sistemi",
               description:
                 "IoT teknolojileri kullanarak geliştirdiğimiz akıllı sera sistemi, bitkilerin büyümesini optimize ediyor ve su tüketimini azaltıyor.",
+                image: "akilli-sera.jfif",
             },
             {
               id: 2,
@@ -193,7 +194,7 @@ export default function HomePage() {
                 <div className="overflow-hidden rounded-lg">
                   <div className="aspect-video bg-muted rounded-lg overflow-hidden transition-transform group-hover:scale-105 duration-500">
                     <Image
-                      src={`/placeholder.svg?height=270&width=480`}
+                      src={project?.image || "/placeholder.svg?height=270&width=480"}
                       alt={`Proje ${project.id}`}
                       width={480}
                       height={270}
