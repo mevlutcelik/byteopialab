@@ -187,7 +187,8 @@ export default function HomePage() {
                     asChild
                     variant="outline"
                     size="lg"
-                    className="border-emerald-700 text-emerald-700 group-hover:bg-emerald-700 group-hover:text-white transition-colors"
+                    className="border-emerald-700 text-emerald-700 group-hover:bg-emerald-700 group-hover:text-white transition-colors
+                    dark:border-emerald-600 dark:text-emerald-400 dark:hover:bg-emerald-600 dark:hover:text-white"
                   >
                     <Link href={`/projects/project-${project.id}`}>Projeyi İncele</Link>
                   </Button>
@@ -199,7 +200,7 @@ export default function HomePage() {
                       alt={`Proje ${project.id}`}
                       width={480}
                       height={270}
-                      className="w-full h-full object-cover border"
+                      className="w-full h-full object-cover border dark:brightness-90"
                     />
                   </div>
                 </div>
