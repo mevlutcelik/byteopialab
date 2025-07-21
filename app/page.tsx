@@ -161,9 +161,10 @@ export default function HomePage() {
             },
             {
               id: 2,
-              title: "Yapay Zeka Destekli Eğitim Platformu",
+              title: "MAUN Mobil",
               description:
-                "Öğrencilerin öğrenme stillerine göre içerik öneren ve kişiselleştirilmiş eğitim deneyimi sunan yapay zeka destekli eğitim platformu.",
+                "Muş Alparslan Üniversitesi öğrenci uygulaması (MAUN Mobil), öğrencilerin üniversite yaşamlarını kolaylaştırmak ve akademik bilgilere hızlı erişim sağlamak için tasarlanmıştır.",
+              image: "maun-mobil.jfif",
             },
             {
               id: 3,
