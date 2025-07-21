@@ -52,14 +52,14 @@ export default function HomePage() {
             <div>
               <p className="text-muted-foreground text-lg mb-2 font-medium">Hoş Geldiniz</p>
               <h1 className="heading-xl mb-4">ByteOpia</h1>
-              <h2 className="heading-md text-emerald-700">Teknoloji Laboratuvarı</h2>
+              <h2 className="heading-md text-emerald-700 dark:text-emerald-400">Teknoloji Laboratuvarı</h2>
             </div>
             <p className="body-lg text-muted-foreground max-w-md">
               Teknolojiye tutkulu gençlerin bir araya gelerek fikir ürettiği, geliştirdiği ve hayata geçirdiği yenilikçi
               bir oluşum.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button asChild size="lg" className="text-lg px-8 bg-emerald-700 hover:bg-emerald-800">
+              <Button asChild size="lg" className="text-lg px-8 bg-emerald-700 hover:bg-emerald-800 dark:bg-emerald-600 dark:hover:bg-emerald-700">
                 <Link href="/#contact">İletişime Geç</Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="text-lg px-8">
@@ -68,15 +68,15 @@ export default function HomePage() {
             </div>
           </div>
           <div className="relative">
-            <div className="absolute -top-10 -left-10 w-40 h-40 bg-emerald-100 rounded-full opacity-50"></div>
-            <div className="absolute -bottom-10 -right-10 w-60 h-60 bg-emerald-100 rounded-full opacity-50"></div>
+            <div className="absolute -top-10 -left-10 w-40 h-40 bg-emerald-100 dark:bg-emerald-950 rounded-full opacity-50"></div>
+            <div className="absolute -bottom-10 -right-10 w-60 h-60 bg-emerald-100 dark:bg-emerald-950 rounded-full opacity-50"></div>
             <div className="relative z-10 aspect-square bg-muted rounded-2xl overflow-hidden border border-border">
               <Image
                 src="/hero.png"
                 alt="ByteOpia"
                 width={600}
                 height={600}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover dark:brightness-90"
               />
             </div>
           </div>
@@ -111,7 +111,7 @@ export default function HomePage() {
             </p>
             <p className="body-lg mb-10">
               Ayrıca düzenli olarak{" "}
-              <Link href="/workshops" className="font-medium underline underline-offset-4 text-emerald-700">
+              <Link href="/workshops" className="font-medium underline underline-offset-4 text-emerald-700 dark:text-emerald-400">
                 atölyeler ve eğitimler
               </Link>{" "}
               düzenleyerek teknoloji alanında kendini geliştirmek isteyen herkese destek oluyoruz.
@@ -121,7 +121,7 @@ export default function HomePage() {
                 asChild
                 variant="outline"
                 size="lg"
-                className="border-emerald-700 text-emerald-700 hover:bg-emerald-700 hover:text-white"
+                className="border-emerald-700 text-emerald-700 hover:bg-emerald-700 dark:border-emerald-600 dark:text-emerald-400 dark:hover:bg-emerald-600 dark:hover:text-white hover:text-white"
               >
                 <Link href="/blog">Blogumuzu Okuyun</Link>
               </Button>
@@ -129,7 +129,7 @@ export default function HomePage() {
                 asChild
                 variant="outline"
                 size="lg"
-                className="border-emerald-700 text-emerald-700 hover:bg-emerald-700 hover:text-white"
+                className="border-emerald-700 text-emerald-700 hover:bg-emerald-700 dark:border-emerald-600 dark:text-emerald-400 dark:hover:bg-emerald-600 dark:hover:text-white hover:text-white"
               >
                 <Link href="/workshops">Atölyelerimiz</Link>
               </Button>
@@ -199,7 +199,7 @@ export default function HomePage() {
                       alt={`Proje ${project.id}`}
                       width={480}
                       height={270}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover border"
                     />
                   </div>
                 </div>
