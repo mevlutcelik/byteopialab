@@ -51,6 +51,7 @@ export default function HomePage() {
           <div className="space-y-8">
             <div>
               <p className="text-muted-foreground text-lg mb-2 font-medium">Hoş Geldiniz</p>
+              <span className="bg-orange-700 text-white dark:bg-orange-600 px-3 py-1.5 rounded-md">Yapım Aşamasında!</span>
               <h1 className="heading-xl mb-4">ByteOpia</h1>
               <h2 className="heading-md text-emerald-700 dark:text-emerald-400">Teknoloji Laboratuvarı</h2>
             </div>
